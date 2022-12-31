@@ -2,6 +2,12 @@ plugins {
     id 'com.android.library'
 }
 
+ext {
+    PUBLISH_ARTIFACT_ID = 'godot-openxr-loaders-meta'
+}
+
+apply from: "../scripts/publish-module.gradle"
+
 android {
     compileSdk versions.compileSdk
 
@@ -32,6 +38,13 @@ android {
     compileOptions {
         sourceCompatibility versions.javaVersion
         targetCompatibility versions.javaVersion
+    }
+
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+            withJavadocJar()
+        }
     }
 }
 
