@@ -1,6 +1,6 @@
 ext {
     versions = [
-            gradlePluginVersion: '7.0.4',
+            gradlePluginVersion: '7.2.1',
             compileSdk         : 31,
             minSdk             : 19,
             targetSdk          : 31,
@@ -8,5 +8,6 @@ ext {
             versionName        : '1.0.0',
             godotLibVersion       : '4.0.0.beta3',
             javaVersion           : JavaVersion.VERSION_11,
+            nexusPublishVersion   : '1.1.0'
     ]
 }

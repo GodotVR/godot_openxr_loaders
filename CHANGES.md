@@ -4,3 +4,4 @@
 - First version
 - Added support for Meta Quest loader
 - Added support for Pico loader
+- Add logic to enable publishing of the Godot OpenXR loaders libraries to mavencentral
